@@ -16,8 +16,8 @@ def natural_sort_key(uploaded_file):
     return [int(text) if text.isdigit() else text.lower() for text in re.split(r'(\d+)', uploaded_file.name)]
 
 def main():
-    st.title("🧪 ESRデータ 完全一括処理アプリ")
-    st.write("テキストファイルの読み込み・Excel変換から、グラフ作成までを一度にすべて実行します。")
+    st.title("🧪 ESR Data Master")
+    st.write("テキストファイルの読み込み・Excel変換から、グラフ作成までを実行します。")
 
     # 1. テキストファイルのアップロード
     uploaded_files = st.file_uploader(
